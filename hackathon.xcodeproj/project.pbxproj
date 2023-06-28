@@ -16,6 +16,9 @@
 		72D98A86299CE7F800F44514 /* hackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D98A85299CE7F800F44514 /* hackathonTests.swift */; };
 		72D98A90299CE7F800F44514 /* hackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D98A8F299CE7F800F44514 /* hackathonUITests.swift */; };
 		72D98A92299CE7F800F44514 /* hackathonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D98A91299CE7F800F44514 /* hackathonUITestsLaunchTests.swift */; };
+		72D98AA0299D20B100F44514 /* brake.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D98A9E299D20B100F44514 /* brake.png */; };
+		72D98AA1299D20B100F44514 /* accel.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D98A9F299D20B100F44514 /* accel.png */; };
+		72D98AA5299D238200F44514 /* game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D98AA4299D238200F44514 /* game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		72D98A8B299CE7F800F44514 /* hackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hackathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72D98A8F299CE7F800F44514 /* hackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackathonUITests.swift; sourceTree = "<group>"; };
 		72D98A91299CE7F800F44514 /* hackathonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackathonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		72D98A9E299D20B100F44514 /* brake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brake.png; sourceTree = "<group>"; };
+		72D98A9F299D20B100F44514 /* accel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accel.png; sourceTree = "<group>"; };
+		72D98AA4299D238200F44514 /* game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,12 @@
 		72D98A6D299CE7F700F44514 /* hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				72D98AA4299D238200F44514 /* game.swift */,
 				72D98A6E299CE7F700F44514 /* AppDelegate.swift */,
 				72D98A70299CE7F700F44514 /* SceneDelegate.swift */,
 				72D98A72299CE7F700F44514 /* ViewController.swift */,
+				72D98A9F299D20B100F44514 /* accel.png */,
+				72D98A9E299D20B100F44514 /* brake.png */,
 				72D98A74299CE7F700F44514 /* Main.storyboard */,
 				72D98A77299CE7F800F44514 /* Assets.xcassets */,
 				72D98A79299CE7F800F44514 /* LaunchScreen.storyboard */,
@@ -232,6 +241,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				72D98A7B299CE7F800F44514 /* LaunchScreen.storyboard in Resources */,
+				72D98AA1299D20B100F44514 /* accel.png in Resources */,
+				72D98AA0299D20B100F44514 /* brake.png in Resources */,
 				72D98A78299CE7F800F44514 /* Assets.xcassets in Resources */,
 				72D98A76299CE7F700F44514 /* Main.storyboard in Resources */,
 			);
@@ -261,6 +272,7 @@
 				72D98A73299CE7F700F44514 /* ViewController.swift in Sources */,
 				72D98A6F299CE7F700F44514 /* AppDelegate.swift in Sources */,
 				72D98A71299CE7F700F44514 /* SceneDelegate.swift in Sources */,
+				72D98AA5299D238200F44514 /* game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,13 +449,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YYX9V3PAJA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = hackathon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,13 +477,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YYX9V3PAJA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = hackathon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
